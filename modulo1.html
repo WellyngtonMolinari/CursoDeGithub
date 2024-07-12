@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de GitHub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Botão de Toggle para a Sidebar -->
+    <button class="toggle-btn" id="toggle-sidebar">☰ Menu</button>
+    
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <h3>
+            Navegação do Curso
+            <button class="hide-sidebar-btn" id="hide-sidebar">&lt;</button>
+        </h3>
+        <nav>
+            <a href="index.html#module1">Módulo 1: Introdução ao GitHub</a>
+            <a href="index.html#module2">Módulo 2: Criando um Repositório</a>
+            <a href="index.html#module3">Módulo 3: Fazendo Commits</a>
+            <a href="index.html#module4">Módulo 4: Colaborando em Projetos</a>
+        </nav>
+        <h3>Páginas Relacionadas</h3>
+        <a href="extras.html">Extras</a>
+        <a href="extras2.html">Extras2</a>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <div class="container" id="main-content">
+        <h1>Curso de GitHub</h1>
+
+        <!-- Espaço para a imagem -->
+        <div class="image-container">
+            <img src="imagens/curso-imagem.jpg" alt="Imagem do Curso">
+        </div>
+
+        <!-- Módulo 1 -->
+        <section>
+            <h2 id="module1">Módulo 1: Introdução ao GitHub</h2>
+            <p>O GitHub é uma plataforma de hospedagem de código-fonte com controle de versão usando o Git. Permite que desenvolvedores colaborem em projetos de software de forma eficiente.</p>
+
+            <!-- O que é Git e GitHub? -->
+            <div class="module-section">
+                <h3>O que é Git e GitHub?</h3>
+                <p>O Git é um sistema de controle de versão distribuído, que permite aos desenvolvedores acompanhar e gerenciar alterações no código ao longo do tempo. O GitHub é uma plataforma que hospeda repositórios Git e oferece ferramentas para colaboração e gerenciamento de projetos.</p>
+                
+                <!-- Espaço para a imagem -->
+                <div class="image-container">
+                    <img src="imagens/git-vs-github.jpg" alt="Diferença entre Git e GitHub">
+                </div>
+            </div>
+
+            <!-- Instalando o Git -->
+            <div class="module-section">
+                <h3>Instalando o Git</h3>
+                <p>Para começar a usar o Git, você precisa instalá-lo em seu computador. Siga os passos abaixo para instalar o Git:</p>
+                <ul>
+                    <li><a href="https://git-scm.com/downloads" target="_blank">Baixe o instalador do Git</a> para o seu sistema operacional.</li>
+                    <li>Execute o instalador e siga as instruções na tela.</li>
+                    <li>Depois de instalado, abra o terminal ou prompt de comando e execute <code>git --version</code> para verificar se a instalação foi bem-sucedida.</li>
+                </ul>
+
+                <!-- Espaço para a imagem -->
+                <div class="image-container">
+                    <img src="imagens/git-installation.jpg" alt="Instalação do Git">
+                </div>
+            </div>
+
+            <!-- Configurando sua conta no GitHub -->
+            <div class="module-section">
+                <h3>Configurando sua conta no GitHub</h3>
+                <p>Para usar o GitHub, você precisa criar uma conta. Siga os passos abaixo para configurar sua conta no GitHub:</p>
+                <ul>
+                    <li><a href="https://github.com/join" target="_blank">Acesse a página de inscrição do GitHub</a>.</li>
+                    <li>Preencha o formulário de inscrição com seu nome, endereço de e-mail e senha.</li>
+                    <li>Verifique seu endereço de e-mail e complete o processo de configuração da conta.</li>
+                </ul>
+
+                <!-- Espaço para a imagem -->
+                <div class="image-container">
+                    <img src="imagens/github-signup.jpg" alt="Inscrição no GitHub">
+                </div>
+            </div>
+        </section>
+
+        <!-- Link de Retorno -->
+        <a href="index.html">← Voltar para a página principal</a>
+    </div>
+
+    <!-- Rodapé
+    <footer>
+        <p>&copy; [Ano Atual] [Nome da Instituição ou do Curso]. Todos os direitos reservados.</p>
+    </footer> -->
+
+    <script src="scripts.js"></script>
+</body>
+</html>

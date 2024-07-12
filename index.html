@@ -13,15 +13,17 @@
     <!-- Sidebar -->
     <div class="sidebar" id="sidebar">
         <h3>
-            Navegação do Curso
+            Conteúdo da Página
             <button class="hide-sidebar-btn" id="hide-sidebar">&lt;</button>
         </h3>
-        <nav>
-            <a href="index.html">Página Principal</a>
-            <a href="#what-is-git-github">O que é Git e GitHub?</a>
-            <a href="#installing-git">Instalando o Git</a>
-            <a href="#configuring-github-account">Configurando sua conta no GitHub</a>
-        </nav>
+        <a href="#o-que-e-git-github">1. O que é Git e GitHub?</a>
+        <a href="#instalando-git">2. Instalando o Git</a>
+        <a href="#configurando-sua-conta-no-github">3. Configurando sua conta no GitHub</a>
+        <a href="#criando-um-repositorio">4. Criando um Repositório</a>
+        <a href="#comandos-basicos-do-git">5. Comandos Básicos do Git</a>
+        <a href="#enviando-codigo-para-o-github">6. Enviando Código para o GitHub</a>
+        <a href="#colaboracao-no-github">7. Colaboração no GitHub</a>
+        <a href="#github-desktop">8. GitHub Desktop</a>
         <h3>Páginas Relacionadas</h3>
         <a href="extras.html">Extras</a>
         <a href="extras2.html">Extras2</a>
@@ -37,8 +39,8 @@
         </div>
 
         <!-- O que é Git e GitHub? -->
-        <section id="what-is-git-github">
-            <h2>O que é Git e GitHub?</h2>
+        <section>
+            <h2 id="o-que-e-git-github">1. O que é Git e GitHub?</h2>
             <p>O Git é um sistema de controle de versão distribuído, criado por Linus Torvalds. Ele permite que desenvolvedores acompanhem e gerenciem alterações no código ao longo do tempo. Já o GitHub é uma plataforma que hospeda repositórios Git e oferece uma série de ferramentas para colaboração e gerenciamento de projetos.</p>
                 
             <!-- Espaço para a imagem -->
@@ -48,8 +50,8 @@
         </section>
 
         <!-- Instalando o Git -->
-        <section id="installing-git">
-            <h2>Instalando o Git</h2>
+        <section>
+            <h2 id="instalando-git">2. Instalando o Git</h2>
             <p>Para começar a usar o Git, você precisa instalá-lo em seu computador. Siga os passos abaixo para instalar o Git:</p>
             <ul>
                 <li><a href="https://git-scm.com/downloads" target="_blank">Baixe o instalador do Git</a> para o seu sistema operacional.</li>
@@ -64,8 +66,8 @@
         </section>
 
         <!-- Configurando sua conta no GitHub -->
-        <section id="configuring-github-account">
-            <h2>Configurando sua conta no GitHub</h2>
+        <section>
+            <h2 id="configurando-sua-conta-no-github">3. Configurando sua conta no GitHub</h2>
             <p>Para usar o GitHub, você precisa criar uma conta. Siga os passos abaixo para configurar sua conta no GitHub:</p>
             <ul>
                 <li><a href="https://github.com/join" target="_blank">Acesse a página de inscrição do GitHub</a>.</li>
@@ -77,6 +79,128 @@
             <div class="image-container">
                 <img src="imagens/github-signup.jpg" alt="Inscrição no GitHub">
             </div>
+        </section>
+
+        <!-- Criando um Repositório -->
+        <section>
+            <h2 id="criando-um-repositorio">4. Criando um Repositório</h2>
+            <p>Para começar a usar o Git e o GitHub, você precisa criar um repositório. Siga os passos abaixo para criar um repositório no GitHub:</p>
+            <ul>
+                <li>Acesse sua conta no GitHub.</li>
+                <li>No canto superior direito, clique no ícone de <strong>+</strong> e selecione <strong>New repository</strong>.</li>
+                <li>Dê um nome ao seu repositório, adicione uma descrição opcional e escolha se o repositório será público ou privado.</li>
+                <li>Selecione <strong>Create repository</strong>.</li>
+            </ul>
+
+            <!-- Espaço para a imagem -->
+            <div class="image-container">
+                <img src="imagens/create-repository.jpg" alt="Criando um repositório no GitHub">
+            </div>
+        </section>
+
+        <!-- Comandos Básicos do Git -->
+        <section>
+            <h2 id="comandos-basicos-do-git">5. Comandos Básicos do Git</h2>
+            <p>Agora que você tem um repositório, vamos aprender alguns comandos básicos do Git:</p>
+            <ul>
+                <li><code>git init</code>: Inicializa um novo repositório Git.</li>
+                <li><code>git add .</code>: Adiciona todos os arquivos modificados à área de preparação.</li>
+                <li><code>git commit -m "mensagem"</code>: Cria um commit com uma mensagem descritiva.</li>
+                <li><code>git push origin main</code>: Envia as alterações para o repositório remoto.</li>
+            </ul>
+
+            <!-- Espaço para a imagem -->
+            <div class="image-container">
+                <img src="imagens/git-commands.jpg" alt="Comandos Básicos do Git">
+            </div>
+        </section>
+
+        <!-- Enviando Código para o GitHub -->
+        <section>
+            <h2 id="enviando-codigo-para-o-github">6. Enviando Código para o GitHub</h2>
+            <p>Depois de fazer alterações no seu código, você pode enviá-las para o GitHub. Siga os passos abaixo para enviar seu código:</p>
+            <ul>
+                <li>Abra o terminal ou prompt de comando na pasta do seu repositório.</li>
+                <li>Adicione os arquivos modificados à área de preparação com <code>git add .</code>.</li>
+                <li>Crie um commit com uma mensagem descritiva usando <code>git commit -m "mensagem"</code>.</li>
+                <li>Envie as alterações para o GitHub com <code>git push origin main</code>.</li>
+            </ul>
+
+            <!-- Espaço para a imagem -->
+            <div class="image-container">
+                <img src="imagens/git-push.jpg" alt="Enviando código para o GitHub">
+            </div>
+        </section>
+
+        <!-- Colaboração no GitHub -->
+        <section>
+            <h2 id="colaboracao-no-github">7. Colaboração no GitHub</h2>
+            <p>O GitHub facilita a colaboração em projetos de software. Aqui estão algumas práticas recomendadas:</p>
+            <ul>
+                <li>Use pull requests para revisar e discutir alterações antes de integrá-las ao projeto principal.</li>
+                <li>Crie issues para rastrear bugs e solicitar novos recursos.</li>
+                <li>Use branches para desenvolver novos recursos e corrigir bugs sem afetar o código principal.</li>
+            </ul>
+
+            <!-- Espaço para a imagem -->
+            <div class="image-container">
+                <img src="imagens/github-collaboration.jpg" alt="Colaboração no GitHub">
+            </div>
+        </section>
+
+        <!-- GitHub Desktop -->
+        <section>
+            <h2 id="github-desktop">8. GitHub Desktop</h2>
+            <p>O GitHub Desktop é uma interface gráfica que simplifica o uso do Git e do GitHub, permitindo gerenciar repositórios, branches e commits de maneira intuitiva. Aqui estão alguns passos para começar com o GitHub Desktop:</p>
+            <ul>
+                <li><strong>Instalação do GitHub Desktop:</strong>
+                    <ul>
+                        <li>Visite o <a href="https://desktop.github.com/">site oficial do GitHub Desktop</a> e baixe o instalador para o seu sistema operacional.</li>
+                        <li>Execute o instalador baixado e siga as instruções na tela para completar a instalação.</li>
+                    </ul>
+                </li>
+                <li><strong>Configuração Inicial:</strong>
+                    <ul>
+                        <li>Após a instalação, abra o GitHub Desktop.</li>
+                        <li>Faça login na sua conta do GitHub ou crie uma nova conta diretamente pelo aplicativo.</li>
+                    </ul>
+                </li>
+                <li><strong>Clonando um Repositório:</strong>
+                    <ul>
+                        <li>No GitHub Desktop, clique em "File" (Arquivo) e selecione "Clone repository" (Clonar repositório).</li>
+                        <li>Escolha o repositório que você deseja clonar da lista de repositórios disponíveis na sua conta do GitHub.</li>
+                        <li>Escolha o local onde deseja salvar o repositório clonado no seu computador.</li>
+                    </ul>
+                </li>
+                <li><strong>Realizando Commits:</strong>
+                    <ul>
+                        <li>Após fazer alterações nos arquivos do seu projeto, o GitHub Desktop mostrará essas alterações.</li>
+                        <li>Adicione uma descrição para o commit na caixa de texto abaixo da lista de arquivos alterados.</li>
+                        <li>Clique em "Commit to main" (Commit para a branch principal) para salvar as alterações localmente.</li>
+                    </ul>
+                </li>
+                <li><strong>Sincronizando com o GitHub:</strong>
+                    <ul>
+                        <li>Para enviar suas alterações para o GitHub, clique em "Push origin" (Enviar para o GitHub).</li>
+                        <li>Isso sincroniza as alterações locais com o repositório remoto no GitHub.</li>
+                    </ul>
+                </li>
+                <li><strong>Gerenciando Branches:</strong>
+                    <ul>
+                        <li>Clique no menu "Current branch" (Branch atual) para criar novas branches, alternar entre branches existentes ou excluir branches que não são mais necessárias.</li>
+                    </ul>
+                </li>
+                <li><strong>Recebendo Atualizações:</strong>
+                    <ul>
+                        <li>Para obter as últimas alterações de um repositório remoto, clique em "Fetch origin" (Buscar do GitHub) para atualizar sua cópia local do repositório.</li>
+                    </ul>
+                </li>
+                <li><strong>Visualização de Histórico:</strong>
+                    <ul>
+                        <li>Utilize a guia "History" (Histórico) para visualizar todos os commits feitos no repositório, incluindo mensagens de commit e alterações associadas.</li>
+                    </ul>
+                </li>
+            </ul>
         </section>
 
         <!-- Link de Retorno -->

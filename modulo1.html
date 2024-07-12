@@ -13,12 +13,16 @@
     <!-- Sidebar -->
     <div class="sidebar" id="sidebar">
         <h3>
-            Navegação do Curso
+            Conteúdo da Página
             <button class="hide-sidebar-btn" id="hide-sidebar">&lt;</button>
         </h3>
-        <nav>
-            <a href="index.html">Página Principal</a>
-        </nav>
+        <a href="#what-is-git-github">1. O que é Git e GitHub?</a>
+        <a href="#installing-git">2. Instalando o Git</a>
+        <a href="#configuring-github-account">3. Configurando sua conta no GitHub</a>
+        <a href="#creating-repository">4. Criando um Repositório</a>
+        <a href="#basic-commands">5. Comandos Básicos do Git</a>
+        <a href="#pushing-code">6. Enviando Código para o GitHub</a>
+        <a href="#collaboration">7. Colaboração no GitHub</a>
         <h3>Páginas Relacionadas</h3>
         <a href="extras.html">Extras</a>
         <a href="extras2.html">Extras2</a>
@@ -33,52 +37,113 @@
             <img src="imagens/curso-imagem.jpg" alt="Imagem do Curso">
         </div>
 
-        <!-- Módulo 1 -->
+        <!-- O que é Git e GitHub? -->
         <section>
-            <h2 id="module1">Módulo 1: Introdução ao GitHub</h2>
-            <p>O GitHub é uma plataforma de hospedagem de código-fonte com controle de versão usando o Git. Ele permite que desenvolvedores colaborem em projetos de software de forma eficiente, oferecendo diversas ferramentas para o gerenciamento de código.</p>
-
-            <!-- O que é Git e GitHub? -->
-            <div class="module-section">
-                <h3 id="what-is-git-github">O que é Git e GitHub?</h3>
-                <p>O Git é um sistema de controle de versão distribuído, criado por Linus Torvalds. Ele permite que desenvolvedores acompanhem e gerenciem alterações no código ao longo do tempo. Já o GitHub é uma plataforma que hospeda repositórios Git e oferece uma série de ferramentas para colaboração e gerenciamento de projetos.</p>
+            <h2 id="what-is-git-github">1. O que é Git e GitHub?</h2>
+            <p>O Git é um sistema de controle de versão distribuído, criado por Linus Torvalds. Ele permite que desenvolvedores acompanhem e gerenciem alterações no código ao longo do tempo. Já o GitHub é uma plataforma que hospeda repositórios Git e oferece uma série de ferramentas para colaboração e gerenciamento de projetos.</p>
                 
-                <!-- Espaço para a imagem -->
-                <div class="image-container">
-                    <img src="imagens/git-vs-github.jpg" alt="Diferença entre Git e GitHub">
-                </div>
+            <!-- Espaço para a imagem -->
+            <div class="image-container">
+                <img src="imagens/git-vs-github.jpg" alt="Diferença entre Git e GitHub">
             </div>
+        </section>
 
-            <!-- Instalando o Git -->
-            <div class="module-section">
-                <h3 id="installing-git">Instalando o Git</h3>
-                <p>Para começar a usar o Git, você precisa instalá-lo em seu computador. Siga os passos abaixo para instalar o Git:</p>
-                <ul>
-                    <li><a href="https://git-scm.com/downloads" target="_blank">Baixe o instalador do Git</a> para o seu sistema operacional.</li>
-                    <li>Execute o instalador e siga as instruções na tela.</li>
-                    <li>Depois de instalado, abra o terminal ou prompt de comando e execute <code>git --version</code> para verificar se a instalação foi bem-sucedida.</li>
-                </ul>
+        <!-- Instalando o Git -->
+        <section>
+            <h2 id="installing-git">2. Instalando o Git</h2>
+            <p>Para começar a usar o Git, você precisa instalá-lo em seu computador. Siga os passos abaixo para instalar o Git:</p>
+            <ul>
+                <li><a href="https://git-scm.com/downloads" target="_blank">Baixe o instalador do Git</a> para o seu sistema operacional.</li>
+                <li>Execute o instalador e siga as instruções na tela.</li>
+                <li>Depois de instalado, abra o terminal ou prompt de comando e execute <code>git --version</code> para verificar se a instalação foi bem-sucedida.</li>
+            </ul>
 
-                <!-- Espaço para a imagem -->
-                <div class="image-container">
-                    <img src="imagens/git-installation.jpg" alt="Instalação do Git">
-                </div>
+            <!-- Espaço para a imagem -->
+            <div class="image-container">
+                <img src="imagens/git-installation.jpg" alt="Instalação do Git">
             </div>
+        </section>
 
-            <!-- Configurando sua conta no GitHub -->
-            <div class="module-section">
-                <h3 id="configuring-github-account">Configurando sua conta no GitHub</h3>
-                <p>Para usar o GitHub, você precisa criar uma conta. Siga os passos abaixo para configurar sua conta no GitHub:</p>
-                <ul>
-                    <li><a href="https://github.com/join" target="_blank">Acesse a página de inscrição do GitHub</a>.</li>
-                    <li>Preencha o formulário de inscrição com seu nome, endereço de e-mail e senha.</li>
-                    <li>Verifique seu endereço de e-mail e complete o processo de configuração da conta.</li>
-                </ul>
+        <!-- Configurando sua conta no GitHub -->
+        <section>
+            <h2 id="configuring-github-account">3. Configurando sua conta no GitHub</h2>
+            <p>Para usar o GitHub, você precisa criar uma conta. Siga os passos abaixo para configurar sua conta no GitHub:</p>
+            <ul>
+                <li><a href="https://github.com/join" target="_blank">Acesse a página de inscrição do GitHub</a>.</li>
+                <li>Preencha o formulário de inscrição com seu nome, endereço de e-mail e senha.</li>
+                <li>Verifique seu endereço de e-mail e complete o processo de configuração da conta.</li>
+            </ul>
 
-                <!-- Espaço para a imagem -->
-                <div class="image-container">
-                    <img src="imagens/github-signup.jpg" alt="Inscrição no GitHub">
-                </div>
+            <!-- Espaço para a imagem -->
+            <div class="image-container">
+                <img src="imagens/github-signup.jpg" alt="Inscrição no GitHub">
+            </div>
+        </section>
+
+        <!-- Criando um Repositório -->
+        <section>
+            <h2 id="creating-repository">4. Criando um Repositório</h2>
+            <p>Para começar a usar o Git e o GitHub, você precisa criar um repositório. Siga os passos abaixo para criar um repositório no GitHub:</p>
+            <ul>
+                <li>Acesse sua conta no GitHub.</li>
+                <li>No canto superior direito, clique no ícone de <strong>+</strong> e selecione <strong>New repository</strong>.</li>
+                <li>Dê um nome ao seu repositório, adicione uma descrição opcional e escolha se o repositório será público ou privado.</li>
+                <li>Selecione <strong>Create repository</strong>.</li>
+            </ul>
+
+            <!-- Espaço para a imagem -->
+            <div class="image-container">
+                <img src="imagens/create-repository.jpg" alt="Criando um repositório no GitHub">
+            </div>
+        </section>
+
+        <!-- Comandos Básicos do Git -->
+        <section>
+            <h2 id="basic-commands">5. Comandos Básicos do Git</h2>
+            <p>Agora que você tem um repositório, vamos aprender alguns comandos básicos do Git:</p>
+            <ul>
+                <li><code>git init</code>: Inicializa um novo repositório Git.</li>
+                <li><code>git add .</code>: Adiciona todos os arquivos modificados à área de preparação.</li>
+                <li><code>git commit -m "mensagem"</code>: Cria um commit com uma mensagem descritiva.</li>
+                <li><code>git push origin main</code>: Envia as alterações para o repositório remoto.</li>
+            </ul>
+
+            <!-- Espaço para a imagem -->
+            <div class="image-container">
+                <img src="imagens/git-commands.jpg" alt="Comandos Básicos do Git">
+            </div>
+        </section>
+
+        <!-- Enviando Código para o GitHub -->
+        <section>
+            <h2 id="pushing-code">6. Enviando Código para o GitHub</h2>
+            <p>Depois de fazer alterações no seu código, você pode enviá-las para o GitHub. Siga os passos abaixo para enviar seu código:</p>
+            <ul>
+                <li>Abra o terminal ou prompt de comando na pasta do seu repositório.</li>
+                <li>Adicione os arquivos modificados à área de preparação com <code>git add .</code>.</li>
+                <li>Crie um commit com uma mensagem descritiva usando <code>git commit -m "mensagem"</code>.</li>
+                <li>Envie as alterações para o GitHub com <code>git push origin main</code>.</li>
+            </ul>
+
+            <!-- Espaço para a imagem -->
+            <div class="image-container">
+                <img src="imagens/git-push.jpg" alt="Enviando código para o GitHub">
+            </div>
+        </section>
+
+        <!-- Colaboração no GitHub -->
+        <section>
+            <h2 id="collaboration">7. Colaboração no GitHub</h2>
+            <p>O GitHub facilita a colaboração em projetos de software. Aqui estão algumas práticas recomendadas:</p>
+            <ul>
+                <li>Use pull requests para revisar e discutir alterações antes de integrá-las ao projeto principal.</li>
+                <li>Crie issues para rastrear bugs e solicitar novos recursos.</li>
+                <li>Use branches para desenvolver novos recursos e corrigir bugs sem afetar o código principal.</li>
+            </ul>
+
+            <!-- Espaço para a imagem -->
+            <div class="image-container">
+                <img src="imagens/github-collaboration.jpg" alt="Colaboração no GitHub">
             </div>
         </section>
 
@@ -91,4 +156,6 @@
         <p>&copy; [Ano Atual] [Nome da Instituição ou do Curso]. Todos os direitos reservados.</p>
     </footer> -->
 
-    <script src="scripts
+    <script src="scripts.js"></script>
+</body>
+</html>
